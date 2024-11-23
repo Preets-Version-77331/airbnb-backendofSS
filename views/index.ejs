@@ -11,7 +11,7 @@
                 <% } else { %>
                     <% homes.forEach(home => { %>
                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105 flex flex-col">
-                        <img src="<%= home.photourl ? '/images/' + home.photourl : '/images/default.jpg' %>" alt="<%= home.houseName %>" class="h-48 w-full rounded-lg object-cover mb-4">
+                        <img src="<%= home.photoUrl %>" alt="<%= home.houseName %>" class="w-full h-48 md:h-64 object-cover">
                         <h2 class="text-xl font-semibold text-gray-800 mb-2"><%= home.houseName %></h2>
                         <p class="text-gray-600 text-sm mb-2">Price: Rs.<%= home.price %></p>
                         <p class="text-gray-600 text-sm mb-2">Location: <%= home.location %></p>
