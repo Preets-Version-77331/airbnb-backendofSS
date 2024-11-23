@@ -6,12 +6,12 @@ const { error } = require("console");
 const registeredHomes = [];
 
 module.exports = class Home {
-  constructor(houseName,price,location , rating , photourl ) {
+  constructor(houseName,price,location , rating , photoUrl ) {
     this.houseName = houseName;
     this.price = price;
     this.location = location;
     this.rating = rating;
-    this.photourl = photourl
+    this.photoUrl = photoUrl
   }
   save() {
     registeredHomes.push(this);
